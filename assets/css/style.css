@@ -36,7 +36,6 @@ h6 {
 /* Header */
 .header {
   width: 100%;
-
   padding-top: 70px;
 }
 
@@ -205,14 +204,42 @@ h6 {
 /* Footer */
 
 .footer {
-  display: flex;
   background-color: #e1e1e1;
+  width: 100%;
+  padding-top: 50px;
 }
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
 .footer__legal {
-  justify-self: start;
-  position: relative;
-  width: 50%;
-  margin: 0 25px;
+  display: flex;
   text-decoration: none;
-  color: #777;
+  gap: 40px;
+}
+
+.footer__social {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.footer__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #626262;
+}
+
+.footer__link:hover {
+  color: #b4ad9e;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: #1d1d1d;
 }
