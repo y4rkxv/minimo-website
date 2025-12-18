@@ -1,9 +1,19 @@
+:root {
+  --color-text-dark: #626262;
+  --color-text-normal: #777;
+  --color-text-accent: #b4ad9e;
+
+  --color-background-white: #ffff;
+  --color-background-gray: #f0f0f0;
+}
+
 body {
   margin: 0;
   font-family: 'Playfair Display', sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #777;
+  color: var(--color-text-normal);
+  background-color: var(--color-background-white);
 }
 .container {
   width: 100%;
@@ -46,11 +56,12 @@ h6 {
 }
 
 .header__logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 400;
   font-family: 'Inconsolata', sans-serif;
-  color: #626262;
+  color: #000;
   text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
 /* Nav */
@@ -63,13 +74,13 @@ h6 {
 .nav__link {
   vertical-align: top;
   position: relative;
-  margin: 0 25px;
+  margin: 0 50px;
   text-decoration: none;
-  color: #777;
+  color: var(--color-text-normal);
 }
 
 .nav__link:hover {
-  color: #b4ad9e;
+  color: var(--color-text-accent);
 }
 /* Section */
 .section {
@@ -89,7 +100,7 @@ h6 {
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #b4ad9e;
+  color: var(--color-text-accent);
 }
 
 .suptitle--bottom {
@@ -101,45 +112,46 @@ h6 {
   font-family: 'Playfair Display' sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #8a8a8a;
+  color: var(--color-text-normal);
+  line-height: 2;
 }
 
 /* Lifestyle */
 .lifestyle {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 60px;
+  justify-content: space-between;
 }
 
 .lifestyle__col {
-  flex: 1 1 0;
-  width: 50%;
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .lifestyle__item {
-  width: 100%;
 }
 .lifestyle__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  transition: filter 0.3s ease;
+}
+
+.lifestyle__img:hover {
+  filter: brightness(80%);
+  cursor: pointer;
 }
 .lifestyle__text {
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #777;
-  width: 100%;
-  max-width: 420px;
   margin-bottom: 100px;
+  width: auto;
 }
 
 /* Subscribes */
 .newsletter {
   width: 100%;
-  background-color: #e1e1e1;
+  background-color: var(--color-background-gray);
 }
 .email {
   text-align: center;
@@ -160,10 +172,10 @@ h6 {
   background: transparent;
   font-family: 'Playfair Display', sans-serif;
   font-size: 14px;
-  color: #626262;
+  color: var(--color-text-dark);
   border: none;
   outline: none;
-  border-bottom: 1px solid #626262;
+  border-bottom: 1px solid var(--color-text-dark);
 }
 
 .subscribe__btn {
@@ -172,7 +184,7 @@ h6 {
   border: none;
 }
 .subscribe__btn:hover {
-  color: #b4ad9e;
+  color: var(--color-text-accent);
   cursor: pointer;
 }
 
@@ -188,8 +200,8 @@ h6 {
   vertical-align: top;
   justify-content: space-between;
   padding: 8px 30px;
-  border: 1px solid #626262;
-  color: #626262;
+  border: 1px solid var(--color-text-dark);
+  color: var(--color-text-dark);
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -197,23 +209,22 @@ h6 {
 }
 
 .btn:hover {
-  background-color: #626262;
-  color: #b4ad9e;
+  background-color: var(--color-background-gray);
+  color: var(--color-text-accent);
 }
 
 /* Footer */
 
 .footer {
-  background-color: #e1e1e1;
+  background-color: var(--color-background-gray);
   width: 100%;
-  padding-top: 50px;
 }
 
 .footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 50px;
 }
 
 .footer__legal {
@@ -227,19 +238,20 @@ h6 {
   text-align: center;
   text-decoration: none;
   gap: 20px;
+  align-items: center;
 }
 
 .footer__link {
   font-size: 14px;
   text-decoration: none;
-  color: #626262;
+  color: var(--color-text-dark);
 }
 
 .footer__link:hover {
-  color: #b4ad9e;
+  color: var(--color-text-accent);
 }
 
 .footer__text {
   font-size: 14px;
-  color: #1d1d1d;
+  color: var(--color-text-dark);
 }
