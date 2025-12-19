@@ -316,11 +316,7 @@ h6 {
   padding-top: 50px;
 }
 
-.header__inner {
-  display: inline;
-    justify-content: center;
-   align-items: center;
-}
+
 
 .header__logo {
   font-size: 30px;
@@ -455,9 +451,12 @@ max-width: 100%;
 
 /* Intro */
 .intro__img {
-  margin-top: 50px;
-  height: 400px;
-  width: 100%;
+ display: none;
+}
+
+/*Photography */
+.photography__text {
+  text-align: justify;
 }
 
 /* Lifestyle */
@@ -490,11 +489,26 @@ max-width: 100%;
 }
 /* Title & Suptitle */
 .title {
-display: flex;
-justify-content: center;}
-
+text-align: center;
+}
 .suptitle {
 display: flex;
 justify-content: center;
+}
+
+/* Footer */
+.footer__content{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer__text {
+  display: none;
+}
+
+.footer__link{
+  font-size: 15px;
 }
 }
