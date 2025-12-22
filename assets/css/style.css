@@ -367,8 +367,11 @@ h6 {
   .header__logo {
     font-size: 30px;
     display: flex;
-    justify-content: center;
     margin-bottom: 40px;
+  }
+  .header__inner {
+    display: flex;
+    flex-direction: column;
   }
   /* Nav */
   .nav {
